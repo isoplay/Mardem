@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Granito Software Survey</title>
+  </head>
+
+  <body>
+    <form action="https://httpbin.org/post" method="post">
+      <label for="name">Nome do Entrevistado:</label>
+      <input type="text" id="name" name="name" required />
+
+      <p>
+        1 - Por favor, avalie o seu conhecimento sobre o software para negócios
+        de exportação de granito:
+      </p>
+      <label>
+        <input type="radio" name="familiarity" value="1" /> Muito Familiar
+      </label>
+      <label>
+        <input type="radio" name="familiarity" value="2" /> Pouco Familiar
+      </label>
+      <label>
+        <input type="radio" name="familiarity" value="3" /> Não muito Familiar
+      </label>
+      <label>
+        <input type="radio" name="familiarity" value="4" /> Completamente
+        Desconhecido
+      </label>
+
+      <p>2 - Você já usou o software para registrar anteriormente?</p>
+      <label>
+        <input type="radio" name="usedRegisterSlabs" value="1" /> Sim
+      </label>
+      <label>
+        <input type="radio" name="usedRegisterSlabs" value="2" /> Não
+      </label>
+
+      <p>3 - Com que frequência você utiliza o software para registro ?</p>
+      <label> <input type="radio" name="timer" value="1" /> Diariamente </label>
+      <label>
+        <input type="radio" name="timer" value="2" /> Semanalmente
+      </label>
+      <label> <input type="radio" name="timer" value="3" /> Mensalmente </label>
+      <label> <input type="radio" name="timer" value="4" /> Raramente </label>
+
+      <p>4 - Quais recursos você mais gosta no software para o registro ?</p>
+      <input type="text" id="recurso" name="software" required />
+
+      <p>
+        5 - Quão fácil ou difícil é para você usar o software para registrar
+        lajes?
+      </p>
+      <label>
+        <input type="radio" name="dificuldade" value="1" /> Muito Fácil
+      </label>
+      <label>
+        <input type="radio" name="dificuldade" value="2" /> Algo Fácil
+      </label>
+      <label>
+        <input type="radio" name="dificuldade" value="3" /> Nem Fácil nem
+        Difícil
+      </label>
+      <label>
+        <input type="radio" name="dificuldade" value="4" /> Algo Difícil
+      </label>
+      <label>
+        <input type="radio" name="dificuldade" value="5" /> Muito Difícil
+      </label>
+
+      <p>
+        6 - Você acha que o software para registro de lajes pode ser aprimorado?
+      </p>
+      <input type="radio" name="improvement" value="1" /> Sim
+      <input type="radio" name="improvement" value="2" /> Não
+
+      <p>- Se sim, como?</p>
+      <textarea name="howToImprove"></textarea>
+
+      <p>
+        7 - Você já usou o software para vender lajes de granito anteriormente?
+      </p>
+      <input type="radio" name="usedBefore" value="1" /> Sim
+      <input type="radio" name="usedBefore" value="2" /> Não
+
+      <p>
+        8 - Com que frequência você utiliza o software para vender lajes de
+        granito?
+      </p>
+      <input type="radio" name="usageFrequency" value="1" /> Diariamente
+      <input type="radio" name="usageFrequency" value="2" /> Semanalmente
+      <input type="radio" name="usageFrequency" value="3" /> Mensalmente
+      <input type="radio" name="usageFrequency" value="4" /> Raramente
+
+      <p>
+        9 - Quais recursos você mais gosta no software para venda de lajes de
+        granito?
+      </p>
+      <textarea name="likedFeatures"></textarea>
+
+      <p>
+        10 - Quão fácil ou difícil é para você usar o software para vender lajes
+        de granito?
+      </p>
+      <input type="radio" name="easeOfUse" value="1" /> Muito Fácil
+      <input type="radio" name="easeOfUse" value="2" /> Algo Fácil
+      <input type="radio" name="easeOfUse" value="3" /> Nem Fácil Nem Difícil
+      <input type="radio" name="easeOfUse" value="4" /> Algo Difícil
+      <input type="radio" name="easeOfUse" value="5" /> Muito Difícil
+
+      <p>
+        11 - Você acha que o software para venda de lajes de granito pode ser
+        aprimorado?
+      </p>
+      <input type="radio" name="improvement" value="1" /> Sim
+      <input type="radio" name="improvement" value="2" /> Não
+
+      <p>- Se sim, como?</p>
+      <textarea name="howToImproveVenda"></textarea>
+      <p>
+        12 - Você já usou o software para comprar material de granito
+        anteriormente?
+      </p>
+      <label>
+        <input type="radio" name="usedBeforeCompra" value="1" /> Sim
+      </label>
+      <label>
+        <input type="radio" name="usedBeforeCompra" value="2" /> Não
+      </label>
+
+      <p>
+        13 - Com que frequência você utiliza o software para comprar material de
+        granito?
+      </p>
+      <label>
+        <input type="radio" name="usageFrequencyCompra" value="1" /> Diariamente
+      </label>
+      <label>
+        <input type="radio" name="usageFrequencyCompra" value="2" />
+        Semanalmente
+      </label>
+      <label>
+        <input type="radio" name="usageFrequencyCompra" value="3" /> Mensalmente
+      </label>
+      <label>
+        <input type="radio" name="usageFrequencyCompra" value="4" /> Raramente
+      </label>
+
+      <p>
+        14 - Quais recursos você mais gosta no software para compra de material
+        de granito?
+      </p>
+      <textarea name="likedFeaturesCompra"></textarea>
+
+      <p>
+        15 - Quão fácil ou difícil é para você usar o software para comprar
+        material de granito?
+      </p>
+      <label>
+        <input type="radio" name="easeOfUseCompra" value="1" /> Muito Fácil
+      </label>
+      <label>
+        <input type="radio" name="easeOfUseCompra" value="2" /> Algo Fácil
+      </label>
+      <label>
+        <input type="radio" name="easeOfUseCompra" value="3" /> Nem Fácil Nem
+        Difícil
+      </label>
+      <label>
+        <input type="radio" name="easeOfUseCompra" value="4" /> Algo Difícil
+      </label>
+      <label>
+        <input type="radio" name="easeOfUseCompra" value="5" /> Muito Difícil
+      </label>
+
+      <p>
+        16 - Você acha que o software para compra de material de granito pode
+        ser aprimorado?
+      </p>
+      <label>
+        <input type="radio" name="improvementCompra" value="1" /> Sim
+      </label>
+      <label>
+        <input type="radio" name="improvementCompra" value="2" /> Não
+      </label>
+
+      <p>- Se sim, como?</p>
+      <textarea name="howToImproveCompra"></textarea>
+
+      <p>
+        17 - Você já usou o software para gerenciar funcionários anteriormente?
+      </p>
+      <label>
+        <input type="radio" name="usedBeforeGerenciar" value="1" /> Sim
+      </label>
+      <label>
+        <input type="radio" name="usedBeforeGerenciar" value="2" /> Não
+      </label>
+
+      <p>
+        18 - Com que frequência você utiliza o software para gerenciar
+        funcionários?
+      </p>
+      <label>
+        <input type="radio" name="usageFrequencyGerenciar" value="1" />
+        Diariamente
+      </label>
+      <label>
+        <input type="radio" name="usageFrequencyGerenciar" value="2" />
+        Semanalmente
+      </label>
+      <label>
+        <input type="radio" name="usageFrequencyGerenciar" value="3" />
+        Mensalmente
+      </label>
+      <label>
+        <input type="radio" name="usageFrequencyGerenciar" value="4" />
+        Raramente
+      </label>
+
+      <p>
+        19 - Quais recursos você mais gosta no software para gerenciamento de
+        funcionários?
+      </p>
+      <textarea name="likedFeaturesGerenciar"></textarea>
+
+      <p>
+        20 - Quão fácil ou difícil é para você usar o software para gerenciar
+        funcionários?
+      </p>
+      <label>
+        <input type="radio" name="easeOfUseGerenciar" value="1" /> Muito Fácil
+      </label>
+      <label>
+        <input type="radio" name="easeOfUseGerenciar" value="2" /> Algo Fácil
+      </label>
+      <label>
+        <input type="radio" name="easeOfUseGerenciar" value="3" /> Nem Fácil Nem
+        Difícil
+      </label>
+      <label>
+        <input type="radio" name="easeOfUseGerenciar" value="4" /> Algo Difícil
+      </label>
+      <label>
+        <input type="radio" name="easeOfUseGerenciar" value="5" /> Muito Difícil
+      </label>
+
+      <p>
+        21 - Você acha que o software para gerenciamento de funcionários pode
+        ser aprimorado?
+      </p>
+      <label>
+        <input type="radio" name="improvementGerenciar" value="1" /> Sim
+      </label>
+      <label>
+        <input type="radio" name="improvementGerenciar" value="2" /> Não
+      </label>
+
+      <p>- Se sim, como?</p>
+      <textarea name="howToImproveGerenciar"></textarea>
+
+      <p>22 - Você já usou o software para gerenciar setores anteriormente?</p>
+      <label>
+        <input type="radio" name="usedBeforeSetores" value="1" /> Sim
+      </label>
+      <label>
+        <input type="radio" name="usedBeforeSetores" value="2" /> Não
+      </label>
+
+      <p>
+        23 - Com que frequência você utiliza o software para gerenciar setores?
+      </p>
+      <label>
+        <input type="radio" name="usageFrequencySetores" value="1" />
+        Diariamente
+      </label>
+      <label>
+        <input type="radio" name="usageFrequencySetores" value="2" />
+        Semanalmente
+      </label>
+      <label>
+        <input type="radio" name="usageFrequencySetores" value="3" />
+        Mensalmente
+      </label>
+      <label>
+        <input type="radio" name="usageFrequencySetores" value="4" /> Raramente
+      </label>
+
+      <p>
+        24 - Quais recursos você mais gosta no software para gerenciamento de
+        setores?
+      </p>
+      <textarea name="likedFeaturesSetores"></textarea>
+
+      <p>
+        25 - Você já trabalhou em uma empresa do setor de mármore e granito
+        antes?
+      </p>
+      <label>
+        <input type="radio" name="previousExperience" value="1" /> Sim
+      </label>
+      <label>
+        <input type="radio" name="previousExperience" value="2" /> Não
+      </label>
+
+      <p>
+        26 - Qual é a sua experiência anterior mais relevante para esta posição
+        na empresa de mármore e granito?
+      </p>
+      <textarea name="relevantExperience"></textarea>
+
+      <p>
+        27 - Você tem conhecimento em processos de corte e acabamento de mármore
+        e granito?
+      </p>
+      <label>
+        <input type="radio" name="cuttingAndFinishingKnowledge" value="1" /> Sim
+      </label>
+      <label>
+        <input type="radio" name="cuttingAndFinishingKnowledge" value="2" /> Não
+      </label>
+
+      <p>
+        28 - Como você lida com prazos apertados e demandas de produção em uma
+        empresa de mármore e granito?
+      </p>
+      <textarea name="deadlineHandling"></textarea>
+
+      <p>
+        29 - Você possui algum treinamento ou certificação relacionado ao
+        manuseio seguro de equipamentos pesados utilizados na indústria de
+        mármore e granito?
+      </p>
+      <label>
+        <input type="radio" name="heavyEquipmentTraining" value="1" /> Sim
+      </label>
+      <label>
+        <input type="radio" name="heavyEquipmentTraining" value="2" /> Não
+      </label>
+
+      <p>
+        30 - Qual é a sua visão para o futuro da indústria de mármore e granito,
+        e como você acredita que pode contribuir para o sucesso da nossa
+        empresa?
+      </p>
+      <textarea name="futureVision"></textarea>
+
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
