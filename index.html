@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="style.css" />
     <title>Granito Software Survey</title>
   </head>
-
   <body>
-    <form action="https://httpbin.org/post" method="post">
+    <h1>Granito Software Survey</h1>
+    <form id="survey-form">
       <label for="name">Nome do Entrevistado:</label>
       <input type="text" id="name" name="name" required />
 
@@ -346,10 +346,9 @@
         empresa?
       </p>
       <textarea name="futureVision"></textarea>
-
       <input type="submit" value="Enviar" />
     </form>
-
+    <div id="feedback"></div>
     <script src="main.js"></script>
   </body>
 </html>
