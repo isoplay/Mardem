@@ -1,7 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset de estilos padrão */
+body, h1, form {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
     background-color: #f2f2f2;
 }
 
@@ -21,6 +25,7 @@ form {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilos de campos do formulário */
 label {
     display: block;
     margin-bottom: 10px;
@@ -39,6 +44,7 @@ textarea {
     margin-bottom: 10px;
 }
 
+/* Estilos do botão de envio */
 input[type="submit"] {
     background-color: #333;
     color: #fff;
@@ -46,6 +52,8 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s; /* Efeito de transição suave */
+
 }
 
 input[type="submit"]:hover {
